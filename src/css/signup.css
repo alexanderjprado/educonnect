@@ -47,7 +47,7 @@
     padding: 0 20rem 0 0;
 }
 
-#btn-sign,
+#btn-login,
 #btn-signup {
     background-color: var(--cyan);
     border: var(--blue) 1px solid;

@@ -14,6 +14,7 @@
     --medium-purple: #6A49F2;
     --footer-bg: #101014;
     --circle-bg: #3B3B3B;
+    --orange: #FE543D;
 
     --title-size: 32rem;
     --subtitle-size: 24rem;
@@ -71,6 +72,11 @@ h1 {
     font-size: 20rem;
     margin: 0.67em 0;
 }
+
+/* h2 {
+    margin-inline-start: 0;
+    margin-block-start: 0;
+} */
 
 button,
 input,
