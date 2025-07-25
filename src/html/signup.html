@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regístrate | Plataforma Educativa</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="./" alt="EduConnect Logo">
+            </div>
+            <div class="nav-links">
+                <ul class="nav-list">
+                    <li class="list-item"><a href="../../index.html">Inicio</a></li>
+                    <li class="list-item"><a href="#">Cursos</a></li>
+                    <li class="list-item"><a href="#">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="nav-buttons">
+                <button id="btn-login" onclick="location.href='#'">Iniciar Sesión</button>
+                <button id="btn-signup">Registrarse</button>
+            </div>
+        </nav>
+    </header>
+    <main class="sign-page-content">
+        <section class="sign-page-section">
+            <div class="sign-container">
+                <h2>Forma parte de EduConnect</h2>
+                <p>Ingresa tus datos y crea tu cuenta</p>
+                <form class="sign-form">
+                    <div class="sign-form-input">
+                        <label for="firstname">Nombre</label>
+                        <input type="firstname" id="firstname" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="sign-form-input">
+                        <label for="lastname">Apellido</label>
+                        <input type="lastname" id="lastname" placeholder="Ingresa tu apellido" required>
+                    </div>
+                    <div class="sign-form-input">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" placeholder="Ingresa tu contraseña" required>
+                    </div>
+                    <div class="conditions">
+                        <input type="checkbox" id="conditions">
+                        <label for="conditions"> Estoy de acuerdo con <a href="#"><strong>Términos de Uso</strong></a> y <a href="#"><strong>Políticas de Privacidad</strong></a></label>
+                    </div>
+                    <button type="submit" class="btn-sign-form">Registrarme</button>
+                </form>
+                <div class="separator">
+                    <span>O</span>
+                </div>
+                <button class="btn-google-sign">
+                    <img src="../../assets/icons/google.svg" alt="Google Logo" class="google-logo"> Registrate con Google
+                </button>
+                <p class="login-prompt">¿Ya tienes una cuenta? <a href="../html/login.html" class="login-link">Inicia Sesión</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h2 class="logo">EduConnect</h2>
+            <p>Interdum velit laoreet id donec ultrices tincidunt arcu. Tristique tortor aliquam nulla facilisi cras fermentum odio eu.</p>
+            <div class="social-icons">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
+          </div>
+
+          <div class="footer-services">
+            <h4>Nuestras Escuelas:</h4>
+            <ul>
+              <li><a href="#">› Computación</a></li>
+              <li><a href="#">› Química</a></li>
+              <li><a href="#">› Física</a></li>
+              <li><a href="#">› Biología</a></li>
+              <li><a href="#">› Matemática</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-subscribe">
+            <h4>Únete a nuestro newsletter</h4>
+            <input type="email" placeholder="Ingresa tu correo aquí" />
+            <button>¡Suscribete!</button>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>Copyright © 2024 <span class="brand">EduConnect</span> | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
