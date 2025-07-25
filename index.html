@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="." type="image/x-icon">
     <title>EduConnect | Plataforma Educativa </title>
-    <link rel="stylesheet" href="./src/index.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <picture class="nav-logo"></picture>
+            <div class="nav-logo">
+                <img src="./" alt="EduConnect Logo">
+            </div>
             <div class="nav-links">
                 <ul class="nav-list">
                     <li class="list-item"><a href="#">Inicio</a></li>
@@ -18,43 +24,181 @@
                     <li class="list-item"><a href="#">Sobre Nosotros</a></li>
                 </ul>
             </div>
-            <picture class="nav-menu"></picture>
             <div class="nav-buttons">
-                <button class="btn-login">Iniciar Sesión</button>
-                <button class="btn-signup">Registrarse</button>
+                <button id="btn-login" onclick="location.href='./src/login.html'">Iniciar Sesión</button>
+                <button id="btn-signup">Registrarse</button>
             </div>
         </nav>
-        <section>
-            <div></div>
-            <picture></picture>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-content-span">Aprende y obtén certificados</span>
+                <h1 class="hero-content-title"> Logra tus sueños a través de  <span class="resaltado">EduConnect</span></h1>
+                <p class="hero-content-paragraph">Somos una experimentada plataforma educacional enfocada en skills estrategica para el logro del aprendizaje online</p>
+                <div class="hero-searchbar">
+                    <input class="hero-searchbar-input" type="text" placeholder="¿Qué curso te gustaría tomar?">
+                    <span></span>
+                </div>
+            </div>
         </section>
     </header>
     <main>
-        <section></section>
-        <section>
-            <article></article>
+        <section class="course-section">
+            <div class="section-header">
+                <h3 class="section-subtitle">Cursos Populares</h3>
             <div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <h2 class="section-title">Explorador Cursos</h2>
+                <a href="#" class="browse-button">Descubre más</a>
+            </div>
+            </div>
+
+            <div class="course-grid">
+              <!-- Card 1 -->
+              <div class="course-card">
+                <div class="course-image">
+                  <img src="path/to/image.jpg" alt="Course Image">
+                  <span class="badge">Computación</span>
+                </div>
+
+                <div class="course-content">
+                  <div class="rating-price">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating">(4.7)</span>
+                  </div>
+                  <h4 class="course-title">Introducción a la Informática</h4>
+                  <div class="course-info">
+                    <span>📄 Lecciones 10</span>
+                    <span>⏰ 19h 30m</span>
+                    <span>👨‍🎓 Estudiantes 20+</span>
+                  </div>
+
+                  <div class="course-footer">
+                    <div class="instructor">
+                      <img src="path/to/profile.jpg" alt="Angela" class="instructor-img">
+                      <span>Por Angela</span>
+                    </div>
+                        <div class="price-cart">
+                            <a href="#" class="">Tomar curso</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="course-card">
+                <div class="course-image">
+                  <img src="path/to/image.jpg" alt="Course Image">
+                  <span class="badge">Computación</span>
+                </div>
+
+                <div class="course-content">
+                  <div class="rating-price">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating">(4.7)</span>
+                  </div>
+                  <h4 class="course-title">Introducción a la Informática</h4>
+                  <div class="course-info">
+                    <span>📄 Lecciones 10</span>
+                    <span>⏰ 19h 30m</span>
+                    <span>👨‍🎓 Estudiantes 20+</span>
+                  </div>
+
+                  <div class="course-footer">
+                    <div class="instructor">
+                      <img src="path/to/profile.jpg" alt="Angela" class="instructor-img">
+                      <span>Por Angela</span>
+                    </div>
+                        <div class="price-cart">
+                            <a href="#" class="">Tomar curso</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="course-card">
+                <div class="course-image">
+                  <img src="path/to/image.jpg" alt="Course Image">
+                  <span class="badge">Computación</span>
+                </div>
+
+                <div class="course-content">
+                  <div class="rating-price">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating">(4.7)</span>
+                  </div>
+                  <h4 class="course-title">Introducción a la Informática</h4>
+                  <div class="course-info">
+                    <span>📄 Lecciones 10</span>
+                    <span>⏰ 19h 30m</span>
+                    <span>👨‍🎓 Estudiantes 20+</span>
+                  </div>
+
+                  <div class="course-footer">
+                    <div class="instructor">
+                      <img src="path/to/profile.jpg" alt="Angela" class="instructor-img">
+                      <span>Por Angela</span>
+                    </div>
+                        <div class="price-cart">
+                            <a href="#" class="">Tomar curso</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+                    <!-- Repite las tarjetas si deseas más -->
             </div>
         </section>
-        <section>Cursos</section>
-        <section>
-            <div></div>
-            <picture></picture>
+
+        <section class="offer-banner">
+            <div class="offer-content">
+                <p class="offer-subtitle">No pierdas la oportunidad</p>
+                <h2 class="offer-title">Accede a todos tus cursos</h2>
+                <p class="offer-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="offer-buttons">
+                  <a href="#" class="btn-green">Admission Now</a>
+                  <a href="#" class="btn-purple">Our Courses</a>
+                </div>
+            </div>
+            <div class="offer-play">
+              <span class="play-button">▶</span>
+            </div>
         </section>
+
     </main>
-    <footer>
-        <div>
-            <div></div>
-            <div></div>
-        </div>
-        <div>
-            <div></div>
-            <div></div>
-        </div>
-        <article></article>
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h2 class="logo">EduConnect</h2>
+      <p>Interdum velit laoreet id donec ultrices tincidunt arcu. Tristique tortor aliquam nulla facilisi cras fermentum odio eu.</p>
+      <div class="social-icons">
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+      </div>
+    </div>
+
+    <div class="footer-services">
+      <h4>Nuestras Escuelas:</h4>
+      <ul>
+        <li><a href="#">› Computación</a></li>
+        <li><a href="#">› Química</a></li>
+        <li><a href="#">› Física</a></li>
+        <li><a href="#">› Biología</a></li>
+        <li><a href="#">› Matemática</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-subscribe">
+      <h4>Únete a nuestro newsletter</h4>
+      <input type="email" placeholder="Ingresa tu correo aquí" />
+      <button>¡Suscribete!</button>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright © 2024 <span class="brand">EduConnect</span> | Todos los derechos reservados.</p>
+  </div>
     </footer>
+
 </body>
 </html>

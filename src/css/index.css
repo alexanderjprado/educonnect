@@ -1,14 +1,24 @@
 :root {
-    --blue:#007bff;
-    --indigo:#6610f2;
+    --blue:#000D3A;
+    --cyan: #2FC7A1;
     --gray: #F9F8FE;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --medium-gray: #858796;
+    --dark-gray: #333333;
+    --light-gray: #F2F2F2;
+    --gray-subtitle: #7E7E7E;
+    --black-title: #1E1E2C;
+    --dark-green: #27AE60;
+    --light-green: #2ECC71;
+    --stars: #F39C12;
+    --dark-purple: #551A8B;
+    --medium-purple: #6A49F2;
+
+    --title-size: 32rem;
+    --subtitle-size: 24rem;
+    --text-size: 16rem;
+
+    --Sora: 'Sora', -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --Epilogue: 'Epilogue', Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 *,
@@ -43,7 +53,7 @@ section {
 body {
     margin: 0;
     font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1.6rem;
+    font-size: 16rem;
     font-weight: 400;
     line-height: 1.5;
     color: #858796;
@@ -56,7 +66,7 @@ main {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 20rem;
     margin: 0.67em 0;
 }
 
@@ -69,6 +79,10 @@ textarea {
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
+}
+
+ul {
+    list-style: none;
 }
 
 a {
@@ -86,12 +100,6 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
+    background-color: transparent;
     -webkit-appearance: button;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
 }
