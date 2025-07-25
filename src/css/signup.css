@@ -144,8 +144,8 @@ main {
     color: var(--medium-gray);
 }
 
-.sign-form .sign-form-input input[type="firstname"],
-.sign-form .sign-form-input input[type="lastname"],
+.sign-form .sign-form-input input[type="username"],
+.sign-form .sign-form-input input[type="mail"],
 .sign-form .sign-form-input input[type="password"] {
     width: 100%;
 
