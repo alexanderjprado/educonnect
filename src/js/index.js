@@ -38,7 +38,7 @@ fetch('./src/data/teachers.json')
     console.error('Error cargando datos:', error);
   });
 
-export function crearCardHTML(course, linkHref = "/educonnect/src/html/login.html") {
+export function crearCardHTML(course, linkHref = "/src/html/login.html") {
   return `
     <div class="course-card">
       <div class="course-image">
