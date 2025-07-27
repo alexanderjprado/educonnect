@@ -5,12 +5,12 @@ const contenedor = document.querySelector('.course-grid');
 
 let teachers = [];
 
-fetch('educonnect/src/data/teachers.json')
+fetch('/src/data/teachers.json')
   .then(res => res.json())
   .then(data => {
     teachers = data;
 
-    return fetch('educonnect/src/data/courses.json');
+    return fetch('/src/data/courses.json');
   })
   .then(res => res.json())
   .then(coursesData => {
