@@ -1,18 +1,26 @@
-class Course {
-    constructor({ categoria, rating, lecciones, duracion, estudiantes, titulo, instructor, imagenCurso, imagenPerfil, Teacher }) {
+export class Teacher {
+    constructor(nombre, imgPerfil) {
+        this.nombre = nombre;
+        this.imgPerfil = imgPerfil;
+    }
+}
+
+export class Course {
+    constructor({ id, categoria, carrera, rating, lecciones, duracion, estudiantes, titulo, imgCurso, teacher}) {
+        this.id = id;
         this.categoria = categoria;
+        this.carrera = carrera;
         this.rating = rating;
         this.lecciones = lecciones;
         this.duracion = duracion;
         this.estudiantes = estudiantes;
         this.titulo = titulo;
-        this.instructor = instructor;
-        this.imagenCurso = imagenCurso;
-        this.imagenPerfil = imagenPerfil;
+        this.imgCurso = imgCurso;
+        this.teacher = teacher;
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+/* document.addEventListener('DOMContentLoaded', () => {
     const userIcon = document.getElementById('btn-user');
     const myCoursesButton = document.getElementById('my-courses');
 
@@ -30,6 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleMyCoursesButton();
         }
     });
-});
+}); */
 
 

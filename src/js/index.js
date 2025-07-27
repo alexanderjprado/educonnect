@@ -1,13 +1,55 @@
+import { Teacher } from './course.js'
+import { Course } from './course.js'
+
+
+const contenedor = document.querySelector('.course-grid');
+
+let teachers = [];
+
+fetch('./src/data/teachers.json')
+  .then(res => res.json())
+  .then(data => {
+    teachers = data;
+
+    return fetch('./src/data/courses.json');
+  })
+  .then(res => res.json())
+  .then(coursesData => {
+    let contenidoHTML = '';
+    let counter = 0;
+
+    coursesData.forEach(courseData => {
+      if (counter < 3) {
+        const teacherData = teachers.find(t => t.id === courseData.teacherId);
+
+      // Si existe el profesor, lo asociamos al curso
+        if (teacherData) {
+          const teacher = new Teacher(teacherData.nombre, teacherData.imgPerfil);
+          courseData.teacher = teacher;
+
+          const course = new Course(courseData);
+          contenidoHTML += crearCardHTML(course);
+          counter++;
+        }
+      }
+    });
+
+    contenedor.innerHTML = contenidoHTML;
+  })
+  .catch(error => {
+    console.error('Error cargando datos:', error);
+  });
+
 function crearCardHTML(course) {
   return `
     <div class="course-card">
       <div class="course-image">
-        <img src="${course.imagenCurso}" alt="Course Image">
+        <img src="${course.imgCurso}" alt="Course Image">
         <span class="badge">${course.categoria}</span>
       </div>
 
       <div class="course-content">
-        <div class="rating-price">
+        <div class="valoration">
           <span class="stars">★★★★★</span>
           <span class="rating">(${course.rating})</span>
         </div>
@@ -20,32 +62,14 @@ function crearCardHTML(course) {
 
         <div class="course-footer">
           <div class="instructor">
-            <img src="${course.imagenPerfil}" alt="${course.instructor}" class="instructor-img">
-            <span>Por ${course.instructor}</span>
+            <img src="${course.teacher.imgPerfil}" alt="${course.teacher.nombre}" class="instructor-img">
+            <span>Por ${course.teacher.nombre}</span>
           </div>
           <div class="take-course">
-            <a href="#">Tomar curso</a>
+            <a href="/src/html/login.html">Tomar curso</a>
           </div>
         </div>
       </div>
     </div>
   `;
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  fetch('./src/data/index.json') // Ruta a tu archivo JSON
-    .then(response => response.json())
-    .then(data => {
-      const courseGrid = document.querySelector(".course-grid");
-      let contenidoHTML = '';
-
-      data.forEach(course => {
-        contenidoHTML += crearCardHTML(course);
-      });
-
-      courseGrid.innerHTML = contenidoHTML;
-    })
-    .catch(error => {
-      console.error('Error con cursos:', error);
-    });
-});

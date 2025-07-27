@@ -372,7 +372,7 @@ main {
     padding: 20rem;
 }
 
-.rating-price {
+.valoration {
     display: flex;
     align-items: center;
     gap: 8rem;
@@ -423,21 +423,8 @@ main {
 .take-course {
     text-align: right;
     font-size: 14px;
-}
-
-.take-course .price {
     display: block;
     font-weight: bold;
-    color: var(--dark-gray);
-}
-
-.take-course s {
-    color: #999;
-    font-size: 13rem;
-}
-
-.cart {
-    font-size: 13rem;
     color: var(--dark-gray);
 }
 

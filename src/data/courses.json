@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "titulo": "Matemática I",
+        "categoria": "Matemáticas",
+        "carrera": ["Computación","Física","Química"],
+        "rating": 4.7,
+        "lecciones": 12,
+        "duracion": "14 S",
+        "estudiantes": 60,
+        "imgCurso": "../assets/images/classroom.svg",
+        "teacherId": 1
+    },
+    {
+        "id": 2,
+        "titulo": "Introducción Informática",
+        "categoria": "Computación",
+        "carrera": [
+            "Ciencias de la Computación"
+        ],
+        "rating": 4.7,
+        "lecciones": 15,
+        "duracion": "12 S",
+        "estudiantes": 40,
+        "imgCurso": "../assets/images/classroom2.svg",
+        "teacherId": 2
+    },
+    {
+        "id": 3,
+        "titulo": "Discretas I",
+        "categoria": "Computación",
+        "carrera": [
+            "Ciencias de la Computación",
+            "Matemática"
+        ],
+        "rating": 4.2,
+        "lecciones": 12,
+        "duracion": "14 S",
+        "estudiantes": 40,
+        "imgCurso": "../assets/images/classroom2.svg",
+        "teacherId": 1
+    }
+]
