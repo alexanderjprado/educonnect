@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${course.title} | EduConnect</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="./" alt="EduConnect Logo">
+            </div>
+            <div class="nav-links">
+                <ul class="nav-list">
+                    <li class="list-item"><a href="./main.html">Inicio</a></li>
+                    <li class="list-item"><a href="#">Cursos</a></li>
+                    <li class="list-item"><a href="#">Nosotros</a></li>
+                    <li class="list-item"><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="nav-buttons">
+                <button id="btn-user" onclick="location.href='#'">
+                    <img src="../../assets/icons/user.png" alt="User Icon" class="user-icon"/>
+                </button>
+                <button id="btn-signout" onclick="location.href='../../index.html'">Cerrar Sesión</button>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-content-span">Aprende y obtén certificados</span>
+                <h1 class="hero-content-title"> Detalles del Curso</h1>
+                <div class="hero-searchbar">
+                    <input class="hero-searchbar-input" type="text" placeholder="¿Qué curso te gustaría tomar?">
+                    <span></span>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main-content">
+        <section class="course-detail">
+            <div class="course-container">
+              <div class="course-main">
+                <img src="../../assets/images/image-course.svg" alt="Course Image" class="course-banner">
+
+                <div class="course-info-top">
+                  <span class="rating-stars">★★★★☆ (4.7)</span>
+                  <h2>Introducción a la Informática</h2>
+                  <div class="course-meta">
+                    <span>📄 Lecciones 4</span>
+                    <span>👨‍🎓 Students 20+</span>
+                  </div>
+                  <div class="tabs">
+                    <button class="tab active">Overview</button>
+                    <button class="tab">Estructura</button>
+                    <button class="tab">Instructor</button>
+                    <button class="tab">Reviews</button>
+                  </div>
+                </div>
+
+                <div class="course-description">
+                  <h3>DESCRIPCIÓN</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                </div>
+              </div>
+
+              <aside class="course-sidebar">
+                <div class="teacher-card">
+                <img src="../../assets/images/teacher.svg" alt="Micheal Hammond" class="teacher-img">
+                <div class="teacher-content">
+                  <h4 class="teacher-name">Michael Flores</h4>
+                  <p class="teacher-role">Teacher</p>
+                </div>
+              </div>
+
+                <div class="sidebar-box">
+                  <p class="sidebar-credit-labell">Unidad de Créditos</p>
+                  <p class="sidebar-credit-value">6</p>
+                  <button class="btn-inscription">Inscribirse</button>
+                </div>
+
+                <ul class="sidebar-details">
+                  <li><strong>Horario:</strong> 4:00 PM - 6:00 PM</li>
+                  <li><strong>Estudiantes inscritos:</strong> 100</li>
+                  <li><strong>Evaluaciones:</strong> 7</li>
+                  <li><strong>Ciclo:</strong> Básico</li>
+                  <li><strong>Dias de Clase</strong> Lunes - Viernes</li>
+                </ul>
+              </aside>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h2 class="logo">EduConnect</h2>
+            <p>Interdum velit laoreet id donec ultrices tincidunt arcu. Tristique tortor aliquam nulla facilisi cras fermentum odio eu.</p>
+            <div class="social-icons">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
+          </div>
+
+          <div class="footer-services">
+            <h4>Nuestras Escuelas:</h4>
+            <ul>
+              <li><a href="#">› Computación</a></li>
+              <li><a href="#">› Química</a></li>
+              <li><a href="#">› Física</a></li>
+              <li><a href="#">› Biología</a></li>
+              <li><a href="#">› Matemática</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-subscribe">
+            <h4>Únete a nuestro newsletter</h4>
+            <input type="email" placeholder="Ingresa tu correo aquí" />
+            <button>¡Suscribete!</button>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>Copyright © 2025 <span class="brand">EduConnect</span> | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="../js/course.js"></script>
+</body>
+</html>

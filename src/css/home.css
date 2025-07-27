@@ -363,39 +363,39 @@ main {
     left: 10px;
     background: var(--light-green);
     color: white;
-    font-size: 12px;
-    padding: 4px 10px;
+    font-size: 12rem;
+    padding: 4rem 10rem;
     border-radius: 4px;
 }
 
 .course-content {
-    padding: 20px;
+    padding: 20rem;
 }
 
 .rating-price {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 14px;
+    gap: 8rem;
+    font-size: 14rem;
     color: var(--stars);
     margin-bottom: 10px;
 }
 
 .course-title {
-    font-size: 16px;
+    font-size: var(--text-size);
     font-weight: bold;
     margin-bottom: 15px;
     color: var(--dark-gray);
 }
 
 .course-info {
-    font-size: 13px;
+    font-size: 14rem;
     display: flex;
     justify-content: space-between;
     color: #777;
-    margin-bottom: 15px;
+    margin-bottom: 15rem;
     border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
+    padding-bottom: 10rem;
 }
 
 .course-footer {
@@ -407,8 +407,9 @@ main {
 .instructor {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 13px;
+    gap: 8rem;
+
+    font-size: 13rem;
     color: #555;
 }
 
@@ -432,69 +433,77 @@ main {
 
 .price-cart s {
     color: #999;
-    font-size: 13px;
+    font-size: 13rem;
 }
 
 .cart {
-    font-size: 13px;
+    font-size: 13rem;
     color: var(--dark-gray);
 }
 
 /* SECOND SECTION - MAIN */
 
 .offer-banner {
-    width: 100%;
-    height: 350rem;
-    background: linear-gradient(rgba(14, 21, 37, 0.85), rgba(14, 21, 37, 0.85)), url('path/to/banner-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 60px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 40rem;
+
+    width: 100%;
+    height: 350rem;
+    padding: 60rem 100rem;
+
+    background-image:
+            linear-gradient(rgba(14, 21, 37, 0.85),
+            rgba(14, 21, 37, 0.85)),
+            url('../../assets/images/classroom.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+
 }
 
 .offer-content {
-    max-width: 600px;
+    max-width: 600rem;
 }
 
 .offer-subtitle {
     text-transform: uppercase;
     font-size: 14rem;
     color: var(--dark-green);
-    margin-bottom: 10px;
+    margin-bottom: 10rem;
 }
 
 .offer-title {
-    font-size: 32px;
-    margin-bottom: 15px;
+    font-size: var(--title-size);
+    margin-bottom: 15rem;
 }
 
 .offer-description {
-    font-size: 15px;
+    font-size: var(--text-size);
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 20rem;
 }
 
 .offer-buttons {
     display: flex;
-    gap: 15px;
+    gap: 15rem;
 }
 
 .btn-green,
 .btn-purple {
     text-decoration: none;
-    padding: 12px 20px;
+    padding: 12rem 20rem;
     border-radius: 5px;
     font-weight: bold;
     font-size: var(--text-size);
 }
 
 .btn-green {
-    background: #27ae60;
+    background: var(--dark-green);
     color: white;
 }
 
@@ -514,14 +523,14 @@ main {
     display: inline-block;
     background: white;
     color: var(--medium-purple);
-    font-size: 24px;
+    font-size: var(--subtitle-size);
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 60rem;
+    height: 60rem;
     text-align: center;
-    line-height: 60px;
+    line-height: 60rem;
     cursor: pointer;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15rem rgba(0, 0, 0, 0.2);
 }
 
 /* FOOTER */
@@ -529,7 +538,7 @@ main {
 .footer {
     background: var(--footer-bg);
     color: var(--gray);
-    padding: 40px 20px 20px;
+    padding: 40rem 20rem 20rem;
 }
 
 .footer-container {
@@ -558,7 +567,7 @@ main {
 
 .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 10rem;
 
     margin-top: 15rem;
 }
@@ -569,8 +578,6 @@ main {
     background: var(--circle-bg);
     border-radius: 50%;
 }
-
-/* FOOTER */
 
 .footer-services h4,
 .footer-subscribe h4 {
@@ -616,7 +623,7 @@ main {
 .footer-bottom {
     text-align: center;
     margin-top: 40rem;
-    border-top: 1px solid #333;
+    border-top: 1px solid var(--dark-gray);
     padding-top: 15rem;
     font-size: var(--text-size);
     color: var(--light-gray);
