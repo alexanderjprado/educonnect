@@ -32,10 +32,10 @@ function crearCardHTML(course) {
   `;
 }
 
-fetch('../data/courses.json')
+fetch('/src/data/courses.json')
     .then(res => res.json())
     .then(courses => {
-        return fetch('../data/teachers.json')
+        return fetch('/src/data/teachers.json')
             .then(res => res.json())
             .then(teachers => {
                 const cursosCompletos = courses.map(curso => {
