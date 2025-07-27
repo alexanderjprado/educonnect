@@ -2,10 +2,10 @@ import { Teacher } from './course.js'
 import { Course } from './course.js'
 
 
-fetch('./src/data/courses.json')
+fetch('/educonnect/src/data/courses.json')
     .then(res => res.json())
     .then(courses => {
-        return fetch('./src/data/teachers.json')
+        return fetch('/educonnect/src/data/teachers.json')
             .then(res => res.json())
             .then(teachers => {
                 const cursosCompletos = courses.map(curso => {
