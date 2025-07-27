@@ -31,7 +31,11 @@
 }
 
 .nav-logo img {
-    border: 2px solid cyan;
+    max-width: 60%;
+    max-height: 80%;
+    padding-left: 60rem;
+    object-fit: contain;
+    mix-blend-mode: multiply;
 }
 
 .nav-buttons {
@@ -429,7 +433,7 @@
 .footer {
     background: var(--footer-bg);
     color: var(--gray);
-    padding: 40px 20px 20px;
+    padding: 40rem 20rem 20rem;
 }
 
 .footer-container {
@@ -458,7 +462,7 @@
 
 .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 10rem;
 
     margin-top: 15rem;
 }
@@ -469,8 +473,6 @@
     background: var(--circle-bg);
     border-radius: 50%;
 }
-
-/* FOOTER */
 
 .footer-services h4,
 .footer-subscribe h4 {
@@ -516,7 +518,7 @@
 .footer-bottom {
     text-align: center;
     margin-top: 40rem;
-    border-top: 1px solid #333;
+    border-top: 1px solid var(--dark-gray);
     padding-top: 15rem;
     font-size: var(--text-size);
     color: var(--light-gray);

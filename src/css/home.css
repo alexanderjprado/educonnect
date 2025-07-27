@@ -9,9 +9,8 @@
 
 .nav {
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     width: 100%;
@@ -19,20 +18,23 @@
     top: 0;
     position: sticky;
 
-    background-color: #f1f0f0ea;
+    background-color: var(--nav-color);
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 
     width: 100%;
     height: 100%;
 }
 
 .nav-logo img {
-    border: 2px solid cyan;
+    max-width: 60%;
+    max-height: 80%;
+    padding-left: 60rem;
+    object-fit: contain;
+    mix-blend-mode: multiply;
 }
 
 .nav-buttons {
@@ -78,7 +80,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 15%;
+    gap: 10%;
 
     width: 100%;
     height: 100%;
@@ -274,8 +276,7 @@ main {
 
 .section-header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 
@@ -284,7 +285,8 @@ main {
 
 .section-header div {
     display: flex;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
     gap: 20rem;
 }
 
@@ -306,8 +308,6 @@ main {
 }
 
 .section-title {
-    width: 300rem;
-
     font-size: var(--title-size);
     font-weight: bold;
     color: var(--black-title);
@@ -389,7 +389,7 @@ main {
 }
 
 .course-info {
-    font-size: 14rem;
+    font-size: 12rem;
     display: flex;
     justify-content: space-between;
     color: #777;
@@ -420,18 +420,18 @@ main {
     background-color: #bbb;
 }
 
-.price-cart {
+.take-course {
     text-align: right;
     font-size: 14px;
 }
 
-.price-cart .price {
+.take-course .price {
     display: block;
     font-weight: bold;
     color: var(--dark-gray);
 }
 
-.price-cart s {
+.take-course s {
     color: #999;
     font-size: 13rem;
 }

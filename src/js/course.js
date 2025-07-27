@@ -1,3 +1,17 @@
+class Course {
+    constructor({ categoria, rating, lecciones, duracion, estudiantes, titulo, instructor, imagenCurso, imagenPerfil, Teacher }) {
+        this.categoria = categoria;
+        this.rating = rating;
+        this.lecciones = lecciones;
+        this.duracion = duracion;
+        this.estudiantes = estudiantes;
+        this.titulo = titulo;
+        this.instructor = instructor;
+        this.imagenCurso = imagenCurso;
+        this.imagenPerfil = imagenPerfil;
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const userIcon = document.getElementById('btn-user');
     const myCoursesButton = document.getElementById('my-courses');
@@ -17,3 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
