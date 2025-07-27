@@ -1,3 +1,7 @@
+import { Teacher } from './course.js'
+import { Course } from './course.js'
+
+
 fetch('./src/data/courses.json')
     .then(res => res.json())
     .then(courses => {
