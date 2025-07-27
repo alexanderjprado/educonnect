@@ -1,7 +1,6 @@
 import { Teacher } from './course.js'
 import { Course } from './course.js'
 
-
 const contenedor = document.querySelector('.course-grid');
 
 let teachers = [];
@@ -22,7 +21,6 @@ fetch('./src/data/teachers.json')
       if (counter < 3) {
         const teacherData = teachers.find(t => t.id === courseData.teacherId);
 
-      // Si existe el profesor, lo asociamos al curso
         if (teacherData) {
           const teacher = new Teacher(teacherData.nombre, teacherData.imgPerfil);
           courseData.teacher = teacher;
@@ -40,7 +38,7 @@ fetch('./src/data/teachers.json')
     console.error('Error cargando datos:', error);
   });
 
-function crearCardHTML(course) {
+export function crearCardHTML(course, linkHref = "/educonnect/src/html/login.html") {
   return `
     <div class="course-card">
       <div class="course-image">
@@ -66,7 +64,7 @@ function crearCardHTML(course) {
             <span>Por ${course.teacher.nombre}</span>
           </div>
           <div class="take-course">
-            <a href="/educonnect/src/html/login.html">Tomar curso</a>
+            <a href="${linkHref}">Tomar curso</a>
           </div>
         </div>
       </div>
