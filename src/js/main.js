@@ -1,14 +1,33 @@
 function crearCardHTML(course) {
     return `
     <div class="course-card">
-      <img src="${course.imgCurso}" alt="${course.titulo}" class="course-image" />
-      <span class="badge">${course.categoria}</span>
-      <h3 class="course-title">${course.titulo}</h3>
-      <div class="course-footer">
-        <img src="${course.teacher.imgPerfil}" alt="${course.teacher.nombre}" class="course-teacher-img" />
-        <span>${course.teacher.nombre}</span>
+      <div class="course-image">
+        <img src="${course.imgCurso}" alt="Course Image">
+        <span class="badge">${course.categoria}</span>
       </div>
-      <a href="./course.html?id=${course.id}" class="course-link">Ver curso</a>
+
+      <div class="course-content">
+        <div class="valoration">
+          <span class="stars">★★★★★</span>
+          <span class="rating">(${course.rating})</span>
+        </div>
+        <h4 class="course-title">${course.titulo}</h4>
+        <div class="course-info">
+          <span>📄 Lecciones ${course.lecciones}</span>
+          <span>⏰ ${course.duracion}</span>
+          <span>👨‍🎓 Estudiantes ${course.estudiantes}</span>
+      </div>
+
+      <div class="course-footer">
+          <div class="instructor">
+            <img src="${course.teacher.imgPerfil}" alt="${course.teacher.nombre}" class="instructor-img">
+            <span>Por ${course.teacher.nombre}</span>
+          </div>
+          <div class="take-course">
+            <a href="./course.html?id=${course.id}">Tomar curso</a>
+          </div>
+        </div>
+      </div>
     </div>
   `;
 }
