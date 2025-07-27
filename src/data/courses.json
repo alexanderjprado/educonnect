@@ -8,7 +8,7 @@
         "lecciones": 12,
         "duracion": "14 S",
         "estudiantes": 60,
-        "imgCurso": "/assets/images/classroom.svg",
+        "imgCurso": "./assets/images/classroom.svg",
         "teacherId": 1
     },
     {
