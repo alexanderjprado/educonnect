@@ -8,5 +8,11 @@
         "id": 2,
         "nombre": "Laura Gómez",
         "imgPerfil": "/assets/images/carla.svg"
+    },
+    {
+        "id": 3,
+        "nombre": "Wilson Robinson",
+        "imgPerfil": "/assets/images/teacher.svg"
+
     }
 ]

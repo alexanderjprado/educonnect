@@ -253,7 +253,7 @@
 
 .course-section {
     padding: 60rem 20rem;
-    max-width: 1200px;
+    max-width: 1200rem;
     margin: auto;
     text-align: center;
 }
@@ -318,7 +318,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 30px;
+    gap: 30rem;
     overflow-x: auto;
     white-space: nowrap
 }
@@ -418,11 +418,11 @@
 
 .price-cart s {
     color: #999;
-    font-size: 13px;
+    font-size: 13rem;
 }
 
 .cart {
-    font-size: 13px;
+    font-size: 13rem;
     color: var(--dark-gray);
 }
 

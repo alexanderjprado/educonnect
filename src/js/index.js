@@ -1,35 +1,35 @@
 import { Teacher } from './course.js'
 import { Course } from './course.js'
 
+const TEACHERS_DATA_URL = '/src/data/teachers.json';
+const COURSES_DATA_URL = '/src/data/courses.json';
+
 const contenedor = document.querySelector('.course-grid');
 
 let teachers = [];
 
-fetch('/src/data/teachers.json')
+fetch(TEACHERS_DATA_URL)
   .then(res => res.json())
   .then(data => {
     teachers = data;
 
-    return fetch('/src/data/courses.json');
+    return fetch(COURSES_DATA_URL);
   })
   .then(res => res.json())
   .then(coursesData => {
     let contenidoHTML = '';
-    let counter = 0;
 
     coursesData.forEach(courseData => {
-      if (counter < 3) {
-        const teacherData = teachers.find(t => t.id === courseData.teacherId);
+      const teacherData = teachers.find(teacher => teacher.id === courseData.teacherId);
 
-        if (teacherData) {
-          const teacher = new Teacher(teacherData.nombre, teacherData.imgPerfil);
-          courseData.teacher = teacher;
+      if (teacherData) {
+        const teacher = new Teacher(teacherData.nombre, teacherData.imgPerfil);
+        courseData.teacher = teacher;
 
-          const course = new Course(courseData);
+        const course = new Course(courseData);
+        console.log("Rendering course:", course.id);
           contenidoHTML += crearCardHTML(course);
-          counter++;
         }
-      }
     });
 
     contenedor.innerHTML = contenidoHTML;
@@ -38,7 +38,7 @@ fetch('/src/data/teachers.json')
     console.error('Error cargando datos:', error);
   });
 
-export function crearCardHTML(course, linkHref = "educonnect/src/html/login.html") {
+export function crearCardHTML(course, linkHref = `/src/html/course.html?id=${course.id}`) {
   return `
     <div class="course-card">
       <div class="course-image">

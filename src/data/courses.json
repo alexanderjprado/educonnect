@@ -3,41 +3,147 @@
         "id": 1,
         "titulo": "Matemática I",
         "categoria": "Matemáticas",
-        "carrera": ["Computación","Física","Química"],
+        "carrera": [
+            "Computación",
+            "Física",
+            "Química"
+        ],
         "rating": 4.7,
         "lecciones": 12,
         "duracion": "14 S",
         "estudiantes": 60,
+        "creditos": 6,
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
         "imgCurso": "/assets/images/classroom.svg",
         "teacherId": 1
     },
     {
         "id": 2,
-        "titulo": "Introducción Informática",
+        "titulo": "Introducción a la Computación",
         "categoria": "Computación",
         "carrera": [
-            "Ciencias de la Computación"
+            "Computación"
         ],
-        "rating": 4.7,
-        "lecciones": 15,
-        "duracion": "12 S",
-        "estudiantes": 40,
+        "rating": 4.9,
+        "lecciones": 10,
+        "duracion": "14 S",
+        "estudiantes": 50,
+        "creditos": 6,
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
         "imgCurso": "/assets/images/classroom2.svg",
         "teacherId": 2
     },
     {
         "id": 3,
-        "titulo": "Discretas I",
+        "titulo": "Lógica I",
+        "categoria": "Matemáticas",
+        "carrera": ["Computación", "Física"
+        ],
+        "rating": 4.5,
+        "lecciones": 11,
+        "duracion": "16 S",
+        "estudiantes": 40,
+        "creditos": 6,
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+        "imgCurso": "/assets/images/classroom3.svg",
+        "teacherId": 3
+    },
+    {
+        "id": 4,
+        "titulo": "Lenguajes y Técnicas de Programación I",
         "categoria": "Computación",
         "carrera": [
-            "Ciencias de la Computación",
-            "Matemática"
+            "Computación"
         ],
-        "rating": 4.2,
-        "lecciones": 12,
+        "rating": 4.8,
+        "lecciones": 15,
+        "duracion": "14 S",
+        "estudiantes": 60,
+        "creditos": 6,
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+        "imgCurso": "/assets/images/classroom4.svg",
+        "teacherId": 1
+    },
+    {
+        "id": 5,
+        "titulo": "Matemática II",
+        "categoria": "Matemáticas",
+        "carrera": [
+            "Computación",
+            "Física"
+        ],
+        "rating": 4.6,
+        "lecciones": 13,
+        "duracion": "14 S",
+        "estudiantes": 50,
+        "creditos": 6,
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+        "imgCurso": "/assets/images/classroom5.svg",
+        "teacherId": 2
+    },
+    {
+        "id": 6,
+        "titulo": "Lógica II",
+        "categoria": "Matemáticas",
+        "carrera": [
+            "Computación"
+        ],
+        "rating": 4.4,
+        "lecciones": 9,
+        "duracion": "16 S",
+        "estudiantes": 60,
+        "creditos": 6,
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+        "imgCurso": "/assets/images/classroom6.svg",
+        "teacherId": 3
+    },
+    {
+        "id": 7,
+        "titulo": "Organización del Computador I",
+        "categoria": "Computación",
+        "carrera": [
+            "Computación"
+        ],
+        "rating": 4.3,
+        "lecciones": 8,
+        "duracion": "14 S",
+        "estudiantes": 50,
+        "creditos": 4,
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+        "imgCurso": "/assets/images/classroom7.svg",
+        "teacherId": 1
+    },
+    {
+        "id": 8,
+        "titulo": "Algoritmos y Estructuras de Datos I",
+        "categoria": "Computación",
+        "carrera": [
+            "Computación"
+        ],
+        "rating": 4.7,
+        "lecciones": 14,
         "duracion": "14 S",
         "estudiantes": 40,
-        "imgCurso":"/assets/images/classroom3.svg",
-        "teacherId": 1
+        "creditos": 6,
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+        "imgCurso": "/assets/images/classroom8.svg",
+        "teacherId": 2
+    },
+    {
+        "id": 9,
+        "titulo": "Matemática III",
+        "categoria": "Matemáticas",
+        "carrera": [
+            "Computación",
+            "Física"
+        ],
+        "rating": 4.1,
+        "lecciones": 7,
+        "duracion": "16 S",
+        "estudiantes": 60,
+        "creditos": 6,
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+        "imgCurso": "/assets/images/classroom9.svg",
+        "teacherId": 3
     }
 ]

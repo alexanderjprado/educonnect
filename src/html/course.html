@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${course.title} | EduConnect</title>
+    <title>´${course.titulo}´| EduConnect</title>
     <link rel="shortcut icon" href="../../assets/icons/favicon_educonnectt.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/course.css">
@@ -47,41 +47,42 @@
         <section class="course-detail">
             <div class="course-container">
               <div class="course-main">
-                <img src="../../assets/images/image-course.svg" alt="Course Image" class="course-banner">
+                <img class="course-banner" alt="Imagen del curso">
 
-                <div class="course-info-top">
-                  <span class="rating-stars">★★★★☆ (4.7)</span>
-                  <h2>Introducción a la Informática</h2>
-                  <div class="course-meta">
-                    <span>📄 Lecciones 4</span>
-                    <span>👨‍🎓 Students 20+</span>
-                  </div>
-                  <div class="tabs">
-                    <button class="tab active">Overview</button>
-                    <button class="tab">Estructura</button>
-                    <button class="tab">Instructor</button>
-                    <button class="tab">Reviews</button>
-                  </div>
+              <div class="course-info-top">
+                <span class="rating-stars"></span>
+                <h2 class="course-title"></h2>
+                <div class="course-meta">
+                  <span class="course-lessons"></span>
+                  <span class="course-students"></span>
                 </div>
 
-                <div class="course-description">
-                  <h3>DESCRIPCIÓN</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                <div class="tabs">
+                  <button class="tab active">Overview</button>
+                  <button class="tab">Estructura</button>
+                  <button class="tab">Instructor</button>
+                  <button class="tab">Reviews</button>
                 </div>
               </div>
+
+              <div class="course-description">
+                <h3>DESCRIPCIÓN</h3>
+                <p class="description-text"></p>
+              </div>
+            </div>
 
               <aside class="course-sidebar">
                 <div class="teacher-card">
-                <img src="../../assets/images/teacher.svg" alt="Micheal Hammond" class="teacher-img">
-                <div class="teacher-content">
-                  <h4 class="teacher-name">Michael Flores</h4>
-                  <p class="teacher-role">Teacher</p>
+                  <img class="teacher-img" alt="Foto del instructor">
+                  <div class="teacher-content">
+                    <h4 class="instructor"></h4>
+                    <p class="role">Profesor</p>
+                  </div>
                 </div>
-              </div>
 
                 <div class="sidebar-box">
                   <p class="sidebar-credit-labell">Unidad de Créditos</p>
-                  <p class="sidebar-credit-value">6</p>
+                  <p class="sidebar-credit-value"></p>
                   <button class="btn-inscription">Inscribirse</button>
                 </div>
 
@@ -131,6 +132,6 @@
           <p>Copyright © 2025 <span class="brand">EduConnect</span> | Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="../js/course.js"></script>
+    <script type="module" src="../js/details.js"></script>
 </body>
 </html>

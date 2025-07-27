@@ -292,7 +292,7 @@ main {
 
 .course-section {
     padding: 40rem 20rem;
-    max-width: 1200px;
+    max-width: 1200rem;
     margin: auto;
     text-align: center;
 }
@@ -330,9 +330,9 @@ main {
 
 .course-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280rem, 1fr));
     grid-auto-flow: column;
-    gap: 30px;
+    gap: 30rem;
     overflow-x: auto;
     white-space: nowrap
 }
@@ -345,9 +345,13 @@ main {
     text-align: left;
 }
 
+.course-card:nth-child(n+4) {
+    display: none;
+}
+
 .course-image {
     position: relative;
-    height: 180px;
+    height: 180rem;
     background-color: #ddd;
 }
 
@@ -376,26 +380,30 @@ main {
     display: flex;
     align-items: center;
     gap: 8rem;
+
+    margin-bottom: 10rem;
+
     font-size: 14rem;
     color: var(--stars);
-    margin-bottom: 10px;
 }
 
 .course-title {
+    margin-bottom: 15rem;
+
     font-size: var(--text-size);
     font-weight: bold;
-    margin-bottom: 15px;
     color: var(--dark-gray);
 }
 
 .course-info {
+    margin-bottom: 15rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10rem;
+
     font-size: 12rem;
     display: flex;
     justify-content: space-between;
     color: #777;
-    margin-bottom: 15rem;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10rem;
 }
 
 .course-footer {
@@ -414,15 +422,16 @@ main {
 }
 
 .instructor-img {
-    width: 30px;
-    height: 30px;
+    width: 30rem;
+    height: 30rem;
+
     border-radius: 50%;
     background-color: #bbb;
 }
 
 .take-course {
     text-align: right;
-    font-size: 14px;
+    font-size: 14rem;
     display: block;
     font-weight: bold;
     color: var(--dark-gray);

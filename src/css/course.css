@@ -343,7 +343,7 @@
     text-align: left;
 }
 
-.teacher-name {
+.instructor {
     margin: 8rem 0 4rem;
 
     font-size: var(--subtitle-size);
@@ -351,7 +351,7 @@
     color: var(--black-title);
 }
 
-.teacher-role {
+.role {
     margin-bottom: 10rem;
 
     color: var(--orange);
