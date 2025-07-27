@@ -2,11 +2,11 @@
     {
         "id": 1,
         "nombre": "Carlos Pérez",
-        "imgPerfil": "./assets/images/carlos.svg"
+        "imgPerfil": "/assets/images/carlos.svg"
     },
     {
         "id": 2,
         "nombre": "Laura Gómez",
-        "imgPerfil": "./assets/images/carla.svg"
+        "imgPerfil": "/assets/images/carla.svg"
     }
 ]

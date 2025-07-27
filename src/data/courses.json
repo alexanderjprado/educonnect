@@ -8,7 +8,7 @@
         "lecciones": 12,
         "duracion": "14 S",
         "estudiantes": 60,
-        "imgCurso": "./assets/images/classroom.svg",
+        "imgCurso": "/assets/images/classroom.svg",
         "teacherId": 1
     },
     {
@@ -22,7 +22,7 @@
         "lecciones": 15,
         "duracion": "12 S",
         "estudiantes": 40,
-        "imgCurso": "./assets/images/classroom2.svg",
+        "imgCurso": "/assets/images/classroom2.svg",
         "teacherId": 2
     },
     {
@@ -37,7 +37,7 @@
         "lecciones": 12,
         "duracion": "14 S",
         "estudiantes": 40,
-        "imgCurso":"./assets/images/classroom3.svg",
+        "imgCurso":"/assets/images/classroom3.svg",
         "teacherId": 1
     }
 ]
