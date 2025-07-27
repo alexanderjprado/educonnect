@@ -5,12 +5,12 @@ const contenedor = document.querySelector('.course-grid');
 
 let teachers = [];
 
-fetch('./src/data/teachers.json')
+fetch('educonnect/src/data/teachers.json')
   .then(res => res.json())
   .then(data => {
     teachers = data;
 
-    return fetch('./src/data/courses.json');
+    return fetch('educonnect/src/data/courses.json');
   })
   .then(res => res.json())
   .then(coursesData => {
@@ -38,7 +38,7 @@ fetch('./src/data/teachers.json')
     console.error('Error cargando datos:', error);
   });
 
-export function crearCardHTML(course, linkHref = "/src/html/login.html") {
+export function crearCardHTML(course, linkHref = "educonnect/src/html/login.html") {
   return `
     <div class="course-card">
       <div class="course-image">
