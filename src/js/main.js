@@ -1,39 +1,29 @@
-import { Teacher } from './course.js'
-import { Course } from './course.js'
+fetch('./src/data/courses.json')
+    .then(res => res.json())
+    .then(courses => {
+        return fetch('./src/data/teachers.json')
+            .then(res => res.json())
+            .then(teachers => {
+                const cursosCompletos = courses.map(curso => {
+                    const teacher = teachers.find(t => t.id === curso.teacherId);
+                    return {
+                        ...curso,
+                        teacher: {
+                            nombre: teacher.nombre,
+                            imgPerfil: teacher.imgPerfil
+                        }
+                    };
+                });
 
-const contenedor = document.querySelector('.course-grid');
-
-let teachers = [];
-
-fetch('./src/data/teachers.json')
-  .then(res => res.json())
-  .then(data => {
-    teachers = data;
-
-    return fetch('./src/data/courses.json');
-  })
-  .then(res => res.json())
-  .then(coursesData => {
-    let contenidoHTML = '';
-
-    coursesData.forEach(courseData => {
-        const teacherData = teachers.find(t => t.id === courseData.teacherId);
-
-        if (teacherData) {
-          const teacher = new Teacher(teacherData.nombre, teacherData.imgPerfil);
-          courseData.teacher = teacher;
-
-          const course = new Course(courseData);
-          contenidoHTML += crearCardHTML(course);
-        }
-    });
-
-    contenedor.innerHTML = contenidoHTML;
-  })
-  .catch(error => {
-    console.error('Error cargando datos:', error);
-  });
-
+                const contenedor = document.querySelector('.course-grid');
+                cursosCompletos.forEach(course => {
+                    const cardHTML = crearCardHTML(course);
+                    contenedor.innerHTML += cardHTML;
+                });
+                contenedor.innerHTML = cursosCompletos.map(crearCardHTML).join('');
+            });
+    })
+    .catch(error => console.error("Error cargando datos:", error));
 
 function crearCardHTML(course) {
     return `
