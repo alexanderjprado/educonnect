@@ -66,7 +66,7 @@ function crearCardHTML(course) {
             <span>Por ${course.teacher.nombre}</span>
           </div>
           <div class="take-course">
-            <a href="/src/html/login.html">Tomar curso</a>
+            <a href="/educonnect/src/html/login.html">Tomar curso</a>
           </div>
         </div>
       </div>
